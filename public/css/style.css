@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contentTitle, .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+.header {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../img/img-header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.8);
+}
+.header .contentLogo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.header .contentLogo-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 64em) {
+  .header .contentLogo {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 764px) {
+  .header .contentLogo {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header .contentLogo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+  }
+}
+@media screen and (max-width: 64em) {
+  .header {
+    height: 50vh;
+  }
+}
+@media screen and (max-width: 764px) {
+  .header {
+    height: 40vh;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    height: 20vh;
+    margin-bottom: 50px;
+  }
+}
+
+.contentTitle {
+  width: 100%;
+  height: 200px;
+  font-size: 2.2em;
+  text-align: center;
+}
+@media screen and (max-width: 450px) {
+  .contentTitle {
+    font-size: 1.5em;
+  }
+}
+
+.galery {
+  margin: auto;
+  width: 65%;
+}
+.galery-motos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 30px;
+  align-content: center;
+  justify-items: center;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 450px) {
+  .galery-motos {
+    grid-gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.galery-telefonos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 30px;
+  align-content: center;
+  justify-items: center;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 450px) {
+  .galery-telefonos {
+    grid-gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.galery-lineaBlanca {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, auto);
+  grid-gap: 30px;
+  align-content: center;
+  justify-items: center;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 450px) {
+  .galery-lineaBlanca {
+    grid-gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.galery-img {
+  width: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 64em) {
+  .galery {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .galery {
+    width: 80%;
+  }
+}
+
+.botonWhatsApp {
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: fixed;
+}
+.botonWhatsApp-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #25d366;
+}
+.botonWhatsApp-img {
+  width: 65%;
+}
+
+.footer {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+.footer-tienda, .footer-dev {
+  height: 100%;
+}
+.footer-tienda, .footer-dev {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+.footer-tienda {
+  justify-content: flex-start;
+}
+.footer-dev {
+  justify-content: flex-end;
+}
+.footer-dev a {
+  color: #a1e9ff;
+}
+@media screen and (max-width: 450px) {
+  .footer {
+    display: block;
+  }
+  .footer-tienda, .footer-dev {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
